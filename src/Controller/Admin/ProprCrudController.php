@@ -25,7 +25,7 @@ class ProprCrudController extends AbstractCrudController
             ImageField::new('image')->setBasePath('uploads/images/prop/')->setUploadDir('public/uploads/images/prop'),
             
             TextField::new('type'),
-    
+            TextField::new('description'),
             IntegerField::new('prix'),
             IntegerField::new('surface'),
             IntegerField::new('chambre'),
