@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-md-12 col-lg-8">
             <div class="title-single-box">
-              <h1 class="title-single">Our Amazing Properties</h1>
+              <h1 class="title-single">Notre Meilleur Propérties</h1>
               <span class="color-text-a">Grid Properties</span>
             </div>
           </div>
@@ -19,7 +19,7 @@
             <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="#">Home</a>
+                  <a href="{{path('app_home')}}">Acceuil</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
                   Properties Grid
@@ -39,10 +39,10 @@
             <div class="grid-option">
               <form>
                 <select class="custom-select">
-                  <option selected>All</option>
-                  <option value="1">New to Old</option>
-                  <option value="2">For Rent</option>
-                  <option value="3">For Sale</option>
+                  <option selected>Touts</option>
+              
+                  <option value="2">A louer</option>
+                  <option value="3">A vendre</option>
                 </select>
               </form>
             </div>
@@ -59,13 +59,13 @@
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="#">204 Mount
+                      <a href="#">Disponible : 
                         <br /> {{ma.titre}}</a>
                     </h2>
                   </div>
                   <div class="card-body-a">
                     <div class="price-box d-flex">
-                      <span class="price-a">rent | $ 12.000</span>
+                      <span class="price-a"> {{ma.prix}} </span><span>DT</span>
                     </div>
                     <a href={{ path('app_details',{'id':ma.id})}}>plus des details 
                       <span class="bi bi-chevron-right"></span>
