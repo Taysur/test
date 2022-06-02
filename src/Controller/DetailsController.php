@@ -23,7 +23,7 @@ class DetailsController extends AbstractController
 
 
 /**
-    * @Route("/trav/{id}", name="app_details")
+    * @Route("/detail/{id}", name="app_details")
     */
    
    public function detail($id ,Request $request): Response
